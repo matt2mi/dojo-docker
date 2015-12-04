@@ -1,0 +1,8 @@
+{
+  "name": "presentation-bespoke-dojo-docker",
+  "version": "0.0.0",
+  "dependencies": {
+    "prism": "gh-pages",
+    "bootstrap": "~3.3.5"
+  }
+}

@@ -1,0 +1,146 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title bespoke-dojo-docker
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      section
+        h1 Dojo Docker
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        h3 Mathieu Deumié
+        h3 Hervé Noumbi
+
+      section(data-bespoke-hash='sommaire')
+        br
+        h2 Sommaire
+        h3 I - Concept
+        h4
+          a(href='#def') Définition
+        h4  
+          a(href='#cont') Les conteneurs
+        h4
+          a(href='#images') Les images
+        br
+        h3 II - La promesse 
+        h4
+          a(href='#contvsvm') Conteneurs vs VMs
+        h4
+          a(href='#auto') Automatisation
+        h4
+          a(href='#sharing') Partage de sources
+        br
+        h3 III - Chez M6
+        h4 
+          a(href='#oracle') oracle
+        h4
+          a(href='#complexe') Pas si simple
+        h4
+          a(href='#winvslin') Windows/MacOS vs Linux
+        br
+        br
+        
+      section(data-bespoke-hash='def')
+        h3 Définition
+        img(src='images/docker-logo.png')
+        br
+        p Package une app avec dep.
+        p Virtualisation légère                                       
+        p Fonctionne avec des conteneurs
+        br
+        a(href='#sommaire').sommaire < sommaire
+      
+      section(data-bespoke-hash='cont')
+        h3 Les conteneurs                                  
+        img(src='images/what_is_docker.png').width150
+        br
+        p Entité contenant l'app.
+        p Partagent le même kernel
+        p Process isolé
+        p Cross platform
+        br
+        a(href='#sommaire').sommaire < sommaire
+        
+      section(data-bespoke-hash='images')
+        h3 Les images
+        p Base des conteneurs
+        p Build grâce à un Dockerfile
+        p "gitable"
+        p Docker hub
+        br
+        a(href='#sommaire').sommaire < sommaire
+        
+      section(data-bespoke-hash='contvsvm')
+        h3 Conteneurs vs VMs
+        img(src='images/docker-vs-vm.png').width400
+        br
+        a(href='#sommaire').sommaire < sommaire
+        
+      section(data-bespoke-hash='auto')
+        h3 Automatisation
+        br
+        img(src='images/docker-vm-troll.jpg').width200
+        br
+        p Docker-compose
+        p Détection de fichiers
+        p En cas de crash
+        br
+        a(href='#sommaire').sommaire < sommaire  
+        
+      section(data-bespoke-hash='sharing')
+        h3 Partage de sources
+        p Une seule config
+        p Fichiers de docker
+        p Mise en place efficace
+        br
+        a(href='#sommaire').sommaire < sommaire  
+        
+      section(data-bespoke-hash='oracle')
+        h3 Oracle
+        p Pas d'images officielles
+        p Produit propriétaire
+        p Mysql, MongoDB, MariaDB...
+        br
+        a(href='#sommaire').sommaire < sommaire
+        
+      section(data-bespoke-hash='complexe')
+        h3 Pas si simple
+        p Mapping de ports
+        p Conf réseau (LDAP, BDD remote)
+        p Persistence données
+        img(src='images/docker-venere.png').width150
+        br
+        a(href='#sommaire').sommaire < sommaire
+          
+      section(data-bespoke-hash='winvslin')
+        h3 Windows/MacOS vs Linux     
+        p Natif Linux
+        p Besoin d'une mini VM sur windows & MacOS
+        p Docker Toolbox
+        p Inception docker-compose
+        br
+        a(href='#sommaire').sommaire < sommaire
+          
+      section(data-bespoke-hash='conclu')
+        h3 Conclusion
+        p Base Oracle :(                               
+        p Machine M6 : Linux :D
+        p Réactivité :D
+        p Légereté :D
+        br
+        a(href='#sommaire').sommaire < sommaire
+                
+    script(src='build/build.js')
